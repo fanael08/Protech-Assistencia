@@ -3,50 +3,158 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Protech Soluções Tecnológicas</title>
-
+  <title>FAQ | Protech Soluções Tecnológicas</title>
+  <meta name="description" content="Protech Soluções Tecnológicas — assistência técnica especializada em smartphones em Uberaba-MG.">
+  <meta name="google-site-verification" content="Wdn0cmDSu0WnmEnq42dpMQcoEYLxqeFj44bf13Go5Dc">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-75MZSPFQYX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-75MZSPFQYX');</script>
 </head>
-
 <body>
-
-<header class="header">
-  <div class="container nav-container">
-    <div class="logo">
-      <img src="img/logo-uniube.png" alt="Uniube">
-      <span>Protech Soluções Tecnológicas</span>
-    </div>
-
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="servicos.html">Serviços</a></li>
-        <li><a href="fotos.html">Galeria</a></li>
-        <li><a href="links.html">Links</a></li>
-        <li><a href="listas.html">Listas</a></li>
-        <li><a href="contato.html" class="btn">Contato</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-
-      </ul>
+<header class="header" role="banner">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="Protech — início">
+      <img src="img/logo-uniube.png" alt="Logo Uniube">
+      <span class="logo-text">Pro<span>tech</span></span>
+    </a>
+    <nav aria-label="Navegação principal">
+      <ul class="nav-menu"><li><a href="index.html">Início</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="servicos.html">Serviços</a></li><li><a href="fotos.html">Galeria</a></li><li><a href="links.html">Links</a></li><li><a href="listas.html">Listas</a></li><li><a href="blog.html">Blog</a></li><li><a href="faq.html"  class="active" aria-current="page">FAQ</a></li></ul>
     </nav>
+    <div class="nav-cta">
+      <a href="contato.html" class="btn btn-primary">Solicitar orçamento</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-75MZSPFQYX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-75MZSPFQYX');
-</script>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile">
+    <a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="servicos.html">Serviços</a>
+    <a href="fotos.html">Galeria</a><a href="links.html">Links</a><a href="listas.html">Listas</a>
+    <a href="blog.html">Blog</a><a href="faq.html">FAQ</a>
+    <div class="m-cta">
+      <a href="contato.html" class="btn btn-primary" style="width:100%;justify-content:center;">Solicitar orçamento</a>
+    </div>
+  </nav>
 </header>
+<main id="main">
 
-<h2>Perguntas Frequentes</h2>
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">Dúvidas</span>
+      <h1 class="display-lg">Perguntas frequentes</h1>
+      <p>Tudo o que você precisa saber antes de trazer seu aparelho.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button class="faq-q">Quanto tempo demora o conserto?<svg class="faq-arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-ans"><p>Depende do serviço. Troca de tela e bateria ficam prontas no mesmo dia. Reparos de placa levam de 1 a 3 dias úteis. Após o diagnóstico, informamos o prazo exato.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Vocês oferecem garantia?<svg class="faq-arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-ans"><p>Sim! Todos os serviços possuem garantia de 90 dias. Se ocorrer qualquer problema dentro desse período, realizamos o reparo sem custo adicional.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">O diagnóstico é gratuito?<svg class="faq-arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-ans"><p>Sim, o diagnóstico é totalmente gratuito e sem compromisso. Você só paga se aprovar o orçamento e autorizar o serviço.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Quais marcas vocês atendem?<svg class="faq-arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-ans"><p>Atendemos todas as principais marcas: Samsung, Apple, Motorola, Xiaomi, LG, Huawei, Sony e outras.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Como acompanho meu reparo?<svg class="faq-arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-ans"><p>Atualizamos você em tempo real pelo WhatsApp em cada etapa: recebimento, diagnóstico, aprovação, execução e entrega.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    document.querySelectorAll('.faq-q').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = this.parentElement;
+        var wasOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+        if (!wasOpen) item.classList.add('open');
+      });
+    });
+  </script>
 
-<h3>Quanto tempo demora o conserto?</h3>
-<p>Depende do serviço, mas geralmente entre 1 e 3 dias.</p>
-
-<h3>Vocês trabalham com garantia?</h3>
-<p>Sim, todos os serviços possuem garantia.</p>
+</main>
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="img/logo-uniube.png" alt="Logo Uniube">
+          <span class="logo-text">Protech</span>
+        </div>
+        <p>Assistência técnica especializada em smartphones. Qualidade, rapidez e garantia em cada serviço.</p>
+        <div class="footer-social">
+          <a href="#" class="s-link" aria-label="Instagram">ig</a>
+          <a href="#" class="s-link" aria-label="Facebook">fb</a>
+          <a href="https://wa.me/5534999999999" class="s-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">wa</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="servicos.html">Microsoldagem</a></li>
+          <li><a href="servicos.html">Reparo de placa</a></li>
+          <li><a href="servicos.html">Troca de tela</a></li>
+          <li><a href="servicos.html">Desbloqueio</a></li>
+          <li><a href="servicos.html">Recuperação de dados</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>A empresa</h4>
+        <ul>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="fotos.html">Galeria</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://wa.me/5534999999999">(34) 9 9999-9999</a></li>
+          <li><a href="mailto:contato@protech.com.br">contato@protech.com.br</a></li>
+          <li>Uberaba — MG</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Protech Soluções Tecnológicas — Rúben Fanael Fernandes da Silva · RA: 5171915</p>
+      <nav class="footer-bottom-links" aria-label="Links legais">
+        <a href="politica.html">Política de privacidade</a>
+        <a href="termos.html">Termos de uso</a>
+        <a href="sitemap.xml">Sitemap</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+<script>
+  var h = document.getElementById('hamburger');
+  var m = document.getElementById('mobile-nav');
+  h.addEventListener('click', function () {
+    var open = m.classList.toggle('open');
+    h.classList.toggle('open', open);
+    h.setAttribute('aria-expanded', String(open));
+  });
+  m.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      m.classList.remove('open');
+      h.classList.remove('open');
+      h.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+</body>
+</html>
