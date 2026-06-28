@@ -3,101 +3,175 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Protech Soluções Tecnológicas</title>
-
+  <title>Serviços | Protech Soluções Tecnológicas</title>
+  <meta name="description" content="Protech Soluções Tecnológicas — assistência técnica especializada em smartphones em Uberaba-MG.">
+  <meta name="google-site-verification" content="Wdn0cmDSu0WnmEnq42dpMQcoEYLxqeFj44bf13Go5Dc">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-75MZSPFQYX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-75MZSPFQYX');</script>
 </head>
-
 <body>
-
-<header class="header">
-  <div class="container nav-container">
-    <div class="logo">
-      <img src="img/logo-uniube.png" alt="Uniube">
-      <span>Protech Soluções Tecnológicas</span>
-    </div>
-
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="servicos.html">Serviços</a></li>
-        <li><a href="fotos.html">Galeria</a></li>
-        <li><a href="links.html">Links</a></li>
-        <li><a href="listas.html">Listas</a></li>
-        <li><a href="contato.html" class="btn">Contato</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-
-      </ul>
+<header class="header" role="banner">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="Protech — início">
+      <img src="img/logo-uniube.png" alt="Logo Uniube">
+      <span class="logo-text">Pro<span>tech</span></span>
+    </a>
+    <nav aria-label="Navegação principal">
+      <ul class="nav-menu"><li><a href="index.html">Início</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="servicos.html"  class="active" aria-current="page">Serviços</a></li><li><a href="fotos.html">Galeria</a></li><li><a href="links.html">Links</a></li><li><a href="listas.html">Listas</a></li><li><a href="blog.html">Blog</a></li><li><a href="faq.html">FAQ</a></li></ul>
     </nav>
+    <div class="nav-cta">
+      <a href="contato.html" class="btn btn-primary">Solicitar orçamento</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-75MZSPFQYX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-75MZSPFQYX');
-</script>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile">
+    <a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="servicos.html">Serviços</a>
+    <a href="fotos.html">Galeria</a><a href="links.html">Links</a><a href="listas.html">Listas</a>
+    <a href="blog.html">Blog</a><a href="faq.html">FAQ</a>
+    <div class="m-cta">
+      <a href="contato.html" class="btn btn-primary" style="width:100%;justify-content:center;">Solicitar orçamento</a>
+    </div>
+  </nav>
 </header>
+<main id="main">
 
-
-<main class="container">
-
-<div class="video-section">
-  <video autoplay muted loop playsinline>
-    <source src="video/assistencia.mp4" type="video/mp4">
-    Seu navegador não suporta vídeo.
-  </video>
-
-  <div class="video-overlay">
-    <h2>Serviços Especializados</h2>
-    <p>Alta tecnologia em reparo de smartphones</p>
-  </div>
-</div>
-
-
-<p>
-Oferecemos uma ampla gama de serviços técnicos voltados para smartphones e tablets.
-</p>
-
-<table border="1">
-  <tr>
-    <th>Serviço</th>
-    <th>Descrição</th>
-    <th>Preço Médio</th>
-  </tr>
-  <tr>
-    <td>Troca de Tela</td>
-    <td>Substituição de display quebrado</td>
-    <td>R$ 200</td>
-  </tr>
-  <tr>
-    <td>Reparo de Placa</td>
-    <td>Correção de falhas em circuitos</td>
-    <td>R$ 350</td>
-  </tr>
-  <tr>
-    <td>Desbloqueio</td>
-    <td>Remoção de bloqueios de sistema</td>
-    <td>R$ 150</td>
-  </tr>
-</table>
-
-<div class="section destaque-servico">
-  <div class="destaque-texto">
-    <h3>Reparo de Placa Profissional</h3>
-    <p>
-      Utilizamos técnicas avançadas de microsoldagem para recuperação de placas
-      com alto índice de sucesso, garantindo qualidade e segurança no serviço.
-    </p>
-  </div>
-
-  <div class="destaque-img">
-    <img src="img/microsolda.png" alt="Microsoldagem em placa">
-  </div>
-</div>
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">O que fazemos</span>
+      <h1 class="display-lg">Serviços especializados</h1>
+      <p>Alta tecnologia em reparo de smartphones — atendemos todas as marcas com técnicos certificados.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="video-hero">
+        <video autoplay muted loop playsinline>
+          <source src="video/assistencia.mp4" type="video/mp4">
+        </video>
+        <div class="video-hero-overlay">
+          <div class="video-hero-text">
+            <h2>Veja nosso trabalho em ação</h2>
+            <p>Diagnóstico preciso, reparo profissional, entrega com garantia.</p>
+          </div>
+        </div>
+      </div>
+      <div class="services-grid">
+        <article class="service-card" id="microsolda"><div class="service-icon"><img src="img/microsolda.png" alt=""></div><h3>Microsoldagem</h3><p>Reparo de componentes SMD, reballing de chips e correção de curtos com estação profissional.</p></article>
+        <article class="service-card" id="placa"><div class="service-icon">📱</div><h3>Reparo de placa-mãe</h3><p>Diagnóstico e correção de falhas eletrônicas complexas.</p></article>
+        <article class="service-card" id="tela"><div class="service-icon">🖥️</div><h3>Troca de tela</h3><p>Substituição com displays originais. Garantia de 90 dias na peça e mão de obra.</p></article>
+        <article class="service-card" id="desbloqueio"><div class="service-icon">🔓</div><h3>Desbloqueio</h3><p>Remoção de bloqueio de operadora, conta Google e FRP sem perda de dados.</p></article>
+        <article class="service-card" id="bateria"><div class="service-icon">⚡</div><h3>Troca de bateria</h3><p>Substituição com componentes homologados para cada modelo.</p></article>
+        <article class="service-card" id="dados"><div class="service-icon">💾</div><h3>Recuperação de dados</h3><p>Recuperamos fotos e arquivos de aparelhos quebrados, molhados ou que não ligam.</p></article>
+      </div>
+      <div class="destaque">
+        <div class="destaque-texto">
+          <span class="section-label">Tecnologia de ponta</span>
+          <h3>Microsoldagem profissional</h3>
+          <p>Utilizamos estação BGA, osciloscópio digital e câmera de inspeção para recuperar placas com alto índice de sucesso.</p>
+          <a href="contato.html" class="btn btn-primary">Solicitar orçamento grátis</a>
+        </div>
+        <div class="destaque-img">
+          <img src="img/microsolda.png" alt="Microsoldagem em placa-mãe">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="prices-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Tabela de preços</span>
+        <h2 class="display-lg">Preços a partir de</h2>
+        <p>Valores estimados. O orçamento definitivo é feito após diagnóstico gratuito.</p>
+      </div>
+      <table class="price-table">
+        <thead><tr><th>Serviço</th><th>Descrição</th><th>Preço médio</th></tr></thead>
+        <tbody>
+          <tr><td>Troca de tela</td><td>Substituição de display quebrado ou com defeito</td><td class="price-badge">A partir de R$ 200</td></tr>
+          <tr><td>Reparo de placa</td><td>Diagnóstico e correção de falhas em circuitos</td><td class="price-badge">A partir de R$ 350</td></tr>
+          <tr><td>Desbloqueio</td><td>Remoção de bloqueios de sistema e conta</td><td class="price-badge">A partir de R$ 150</td></tr>
+          <tr><td>Troca de bateria</td><td>Substituição por bateria certificada</td><td class="price-badge">A partir de R$ 120</td></tr>
+          <tr><td>Recuperação de dados</td><td>Extração de fotos, contatos e arquivos</td><td class="price-badge">A partir de R$ 180</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
 </main>
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="img/logo-uniube.png" alt="Logo Uniube">
+          <span class="logo-text">Protech</span>
+        </div>
+        <p>Assistência técnica especializada em smartphones. Qualidade, rapidez e garantia em cada serviço.</p>
+        <div class="footer-social">
+          <a href="#" class="s-link" aria-label="Instagram">ig</a>
+          <a href="#" class="s-link" aria-label="Facebook">fb</a>
+          <a href="https://wa.me/5534999999999" class="s-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">wa</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="servicos.html">Microsoldagem</a></li>
+          <li><a href="servicos.html">Reparo de placa</a></li>
+          <li><a href="servicos.html">Troca de tela</a></li>
+          <li><a href="servicos.html">Desbloqueio</a></li>
+          <li><a href="servicos.html">Recuperação de dados</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>A empresa</h4>
+        <ul>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="fotos.html">Galeria</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://wa.me/5534999999999">(34) 9 9999-9999</a></li>
+          <li><a href="mailto:contato@protech.com.br">contato@protech.com.br</a></li>
+          <li>Uberaba — MG</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Protech Soluções Tecnológicas — Rúben Fanael Fernandes da Silva · RA: 5171915</p>
+      <nav class="footer-bottom-links" aria-label="Links legais">
+        <a href="politica.html">Política de privacidade</a>
+        <a href="termos.html">Termos de uso</a>
+        <a href="sitemap.xml">Sitemap</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+<script>
+  var h = document.getElementById('hamburger');
+  var m = document.getElementById('mobile-nav');
+  h.addEventListener('click', function () {
+    var open = m.classList.toggle('open');
+    h.classList.toggle('open', open);
+    h.setAttribute('aria-expanded', String(open));
+  });
+  m.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      m.classList.remove('open');
+      h.classList.remove('open');
+      h.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+</body>
+</html>
