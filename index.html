@@ -3,108 +3,592 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Protech Soluções Tecnológicas</title>
+  <title>Protech Soluções Tecnológicas | Assistência Técnica em Smartphones</title>
+  <meta name="description" content="Assistência técnica especializada em smartphones em Uberaba-MG. Reparo de placa, microsoldagem, troca de tela, desbloqueio e recuperação de dados.">
+  <meta name="keywords" content="assistência técnica smartphone, reparo celular Uberaba, microsoldagem, troca de tela, desbloqueio celular, Protech">
+  <meta name="author" content="Rúben Fanael Fernandes da Silva">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fanael08.github.io/Protech-Assistencia/">
+  <meta property="og:title" content="Protech Soluções Tecnológicas">
+  <meta property="og:description" content="Assistência técnica especializada em smartphones em Uberaba-MG.">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta name="google-site-verification" content="Wdn0cmDSu0WnmEnq42dpMQcoEYLxqeFj44bf13Go5Dc">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-75MZSPFQYX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-75MZSPFQYX');
+  </script>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Protech Soluções Tecnológicas","url":"https://fanael08.github.io/Protech-Assistencia/","address":{"@type":"PostalAddress","addressLocality":"Uberaba","addressRegion":"MG","addressCountry":"BR"}}
+  </script>
+
+  <style>
+    :root {
+      --color-primary:     #0A1628;
+      --color-secondary:   #1A3A6E;
+      --color-accent:      #0EA5E9;
+      --color-accent-dark: #0284C7;
+      --color-success:     #10B981;
+      --color-bg:          #F8FAFC;
+      --color-surface:     #FFFFFF;
+      --color-border:      #E2E8F0;
+      --color-text:        #0F172A;
+      --color-text-muted:  #64748B;
+      --font-display: 'Space Grotesk', sans-serif;
+      --font-body:    'Inter', sans-serif;
+      --radius-sm:   6px;
+      --radius-md:   12px;
+      --radius-lg:   20px;
+      --radius-full: 9999px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,.06);
+      --shadow-md: 0 4px 16px rgba(0,0,0,.08);
+      --shadow-lg: 0 12px 40px rgba(0,0,0,.10);
+      --max-w: 1140px;
+      --section-gap: 88px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); font-size: 16px; line-height: 1.7; color: var(--color-text); background: var(--color-bg); -webkit-font-smoothing: antialiased; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    .container { width: 100%; max-width: var(--max-w); margin-inline: auto; padding-inline: 24px; }
+    .display-xl { font-family: var(--font-display); font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; }
+    .display-lg { font-family: var(--font-display); font-size: clamp(1.7rem, 3.5vw, 2.4rem); font-weight: 700; line-height: 1.2; letter-spacing: -0.015em; }
+    .section-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-accent); display: block; margin-bottom: 10px; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: var(--radius-full); font-family: var(--font-body); font-size: 0.9375rem; font-weight: 600; cursor: pointer; transition: all 0.2s ease; border: none; }
+    .btn-primary { background: var(--color-accent); color: #fff; }
+    .btn-primary:hover { background: var(--color-accent-dark); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(14,165,233,.35); }
+    .btn-outline { background: transparent; color: var(--color-primary); border: 1.5px solid var(--color-border); }
+    .btn-outline:hover { border-color: var(--color-accent); color: var(--color-accent); }
+    .btn-white { background: #fff; color: var(--color-primary); }
+    .btn-white:hover { background: #F1F5F9; transform: translateY(-1px); }
+
+    /* HEADER */
+    .header { position: sticky; top: 0; z-index: 200; background: rgba(255,255,255,0.92); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--color-border); }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; gap: 16px; }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo img { height: 36px; width: auto; object-fit: contain; }
+    .logo-text { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; color: var(--color-primary); white-space: nowrap; }
+    .logo-text span { color: var(--color-accent); }
+    .nav-menu { display: flex; align-items: center; gap: 2px; }
+    .nav-menu a { padding: 7px 13px; border-radius: var(--radius-sm); font-size: 0.875rem; font-weight: 500; color: var(--color-text-muted); transition: all 0.15s; white-space: nowrap; }
+    .nav-menu a:hover { color: var(--color-primary); background: #F1F5F9; }
+    .nav-menu a.active { color: var(--color-accent); background: #EFF6FF; }
+    .nav-cta { flex-shrink: 0; }
+
+    /* HAMBURGER */
+    .hamburger { display: none; flex-direction: column; justify-content: center; align-items: center; gap: 5px; width: 42px; height: 42px; background: none; border: 1.5px solid var(--color-border); border-radius: var(--radius-sm); cursor: pointer; padding: 0; flex-shrink: 0; }
+    .hamburger span { display: block; width: 20px; height: 2px; background: var(--color-primary); border-radius: 2px; transition: all 0.25s ease; transform-origin: center; }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* MOBILE NAV */
+    .mobile-nav { display: none; position: absolute; top: 68px; left: 0; right: 0; background: #fff; border-bottom: 1px solid var(--color-border); box-shadow: 0 8px 24px rgba(0,0,0,.08); z-index: 199; padding: 8px 24px 20px; }
+    .mobile-nav.open { display: block; }
+    .mobile-nav a { display: block; padding: 13px 0; font-size: 1rem; font-weight: 500; color: var(--color-text-muted); border-bottom: 1px solid var(--color-border); transition: color 0.15s; }
+    .mobile-nav a:last-of-type { border-bottom: none; margin-bottom: 0; }
+    .mobile-nav a:hover { color: var(--color-accent); }
+    .mobile-nav .m-cta { margin-top: 16px; display: flex; }
+
+    /* HERO */
+    .hero { padding: 80px 0 68px; background: linear-gradient(160deg, #EFF6FF 0%, var(--color-bg) 55%); }
+    .hero-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .hero-eyebrow { display: flex; align-items: center; gap: 8px; margin-bottom: 18px; }
+    .eyebrow-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--color-success); animation: pulse 2s ease infinite; }
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(16,185,129,.4); }
+      50%       { box-shadow: 0 0 0 8px rgba(16,185,129,0); }
+    }
+    .eyebrow-text { font-size: 0.875rem; font-weight: 600; color: var(--color-success); }
+    .hero h1 { color: var(--color-primary); margin-bottom: 18px; }
+    .hero h1 .accent { color: var(--color-accent); }
+    .hero-desc { font-size: 1.0625rem; color: var(--color-text-muted); margin-bottom: 32px; max-width: 460px; }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .hero-stats { display: flex; gap: 28px; margin-top: 40px; padding-top: 28px; border-top: 1px solid var(--color-border); flex-wrap: wrap; }
+    .stat-num { font-family: var(--font-display); font-size: 1.75rem; font-weight: 700; color: var(--color-primary); line-height: 1; }
+    .stat-label { font-size: 0.8125rem; color: var(--color-text-muted); margin-top: 4px; }
+
+    /* Fotos hero */
+    .photo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .photo-main { grid-column: 1 / -1; border-radius: var(--radius-lg); overflow: hidden; height: 220px; box-shadow: var(--shadow-md); }
+    .photo-main img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+    .photo-main:hover img { transform: scale(1.03); }
+    .photo-small { border-radius: var(--radius-md); overflow: hidden; height: 140px; box-shadow: var(--shadow-sm); }
+    .photo-small img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+    .photo-small:hover img { transform: scale(1.05); }
+    .photo-badge { position: absolute; bottom: -8px; right: 8px; background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 10px 14px; box-shadow: var(--shadow-md); display: flex; align-items: center; gap: 10px; font-size: 0.8125rem; }
+    .hero-visual { position: relative; }
+    .badge-icon { width: 36px; height: 36px; border-radius: 8px; background: #EAF3DE; display: flex; align-items: center; justify-content: center; font-size: 1.125rem; }
+    .badge-val { font-weight: 700; color: var(--color-primary); font-family: var(--font-display); font-size: 1rem; }
+    .badge-lbl { font-size: 0.75rem; color: var(--color-text-muted); }
+
+    /* SEÇÃO */
+    .section { padding: var(--section-gap) 0; }
+    .section-header { text-align: center; max-width: 600px; margin: 0 auto 52px; }
+    .section-header p { font-size: 1.0625rem; color: var(--color-text-muted); margin-top: 10px; }
+
+    /* SERVIÇOS */
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .service-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 28px 24px; transition: all 0.25s ease; position: relative; overflow: hidden; }
+    .service-card::after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--color-accent); transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease; }
+    .service-card:hover { border-color: transparent; box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+    .service-card:hover::after { transform: scaleX(1); }
+    .service-icon { width: 48px; height: 48px; border-radius: var(--radius-md); background: #EFF6FF; display: flex; align-items: center; justify-content: center; margin-bottom: 18px; font-size: 1.375rem; overflow: hidden; }
+    .service-icon img { width: 100%; height: 100%; object-fit: cover; }
+    .service-card h3 { font-family: var(--font-display); font-size: 1.0625rem; font-weight: 700; color: var(--color-primary); margin-bottom: 8px; }
+    .service-card p { font-size: 0.9375rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 18px; }
+    .service-link { font-size: 0.875rem; font-weight: 600; color: var(--color-accent); display: inline-flex; align-items: center; gap: 4px; transition: gap 0.2s; }
+    .service-link:hover { gap: 8px; }
+
+    /* POR QUÊ */
+    .why-section { background: var(--color-primary); padding: var(--section-gap) 0; }
+    .why-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+    .why-content .section-label { color: #60A5FA; }
+    .why-content h2 { color: #fff; margin-bottom: 14px; }
+    .why-content > p { color: #94A3B8; font-size: 1rem; margin-bottom: 32px; line-height: 1.7; }
+    .features { display: flex; flex-direction: column; gap: 18px; }
+    .feature { display: flex; gap: 14px; align-items: flex-start; }
+    .feature-icon { width: 40px; height: 40px; border-radius: 10px; background: rgba(14,165,233,.12); border: 1px solid rgba(14,165,233,.2); display: flex; align-items: center; justify-content: center; font-size: 1.125rem; flex-shrink: 0; }
+    .feature h4 { font-weight: 600; font-size: 0.9375rem; color: #fff; margin-bottom: 3px; }
+    .feature p { font-size: 0.875rem; color: #94A3B8; line-height: 1.55; }
+    .why-gallery { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 200px 160px; gap: 10px; }
+    .g-main { grid-column: 1 / -1; border-radius: var(--radius-md); overflow: hidden; }
+    .g-main img, .g-small img { width: 100%; height: 100%; object-fit: cover; filter: brightness(.85); transition: filter 0.3s; }
+    .g-main:hover img, .g-small:hover img { filter: brightness(1); }
+    .g-small { border-radius: var(--radius-md); overflow: hidden; }
+
+    /* PROCESSO */
+    .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; }
+    .process-grid::before { content: ''; position: absolute; top: 35px; left: 12.5%; right: 12.5%; height: 1px; background: linear-gradient(90deg, var(--color-border), var(--color-accent), var(--color-border)); }
+    .process-step { text-align: center; padding: 0 12px; }
+    .process-num { width: 70px; height: 70px; border-radius: 50%; background: #fff; border: 2px solid var(--color-border); display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: var(--color-accent); position: relative; z-index: 1; }
+    .process-step h3 { font-family: var(--font-display); font-size: 0.9375rem; font-weight: 700; color: var(--color-primary); margin-bottom: 8px; }
+    .process-step p { font-size: 0.875rem; color: var(--color-text-muted); line-height: 1.6; }
+
+    /* DEPOIMENTOS */
+    .testimonials-section { background: #F8FAFC; }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .testimonial-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 24px; }
+    .stars { color: #F59E0B; font-size: 0.875rem; margin-bottom: 14px; letter-spacing: 2px; }
+    .testimonial-text { font-size: 0.9375rem; color: var(--color-text-muted); line-height: 1.7; margin-bottom: 18px; font-style: italic; }
+    .t-author { display: flex; align-items: center; gap: 10px; }
+    .t-avatar { width: 38px; height: 38px; border-radius: 50%; background: linear-gradient(135deg, var(--color-accent), var(--color-secondary)); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.8125rem; color: #fff; flex-shrink: 0; }
+    .t-name { font-weight: 600; font-size: 0.875rem; color: var(--color-primary); }
+    .t-city { font-size: 0.8125rem; color: var(--color-text-muted); }
+
+    /* CTA */
+    .cta-section { padding: var(--section-gap) 0; }
+    .cta-inner { background: linear-gradient(135deg, var(--color-secondary), var(--color-primary)); border-radius: 24px; padding: 60px 48px; text-align: center; }
+    .cta-inner h2 { color: #fff; margin-bottom: 10px; }
+    .cta-inner p { color: #94A3B8; font-size: 1.0625rem; margin-bottom: 28px; }
+    .cta-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .cta-accent { color: var(--color-accent); }
+    .btn-ghost-white { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.3); padding: 12px 24px; border-radius: var(--radius-full); font-size: 0.9375rem; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s; }
+    .btn-ghost-white:hover { border-color: #fff; background: rgba(255,255,255,.08); }
+
+    /* FOOTER */
+    .footer { background: var(--color-primary); color: #94A3B8; padding: 60px 0 28px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 44px; }
+    .footer-logo { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .footer-logo img { height: 32px; width: auto; filter: brightness(0) invert(1); opacity: .85; }
+    .footer-logo .logo-text { color: #fff; }
+    .footer-brand p { font-size: 0.875rem; line-height: 1.7; max-width: 260px; }
+    .footer-social { display: flex; gap: 8px; margin-top: 16px; }
+    .s-link { width: 34px; height: 34px; border-radius: 8px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 600; color: #94A3B8; transition: all 0.2s; }
+    .s-link:hover { background: var(--color-accent); border-color: var(--color-accent); color: #fff; }
+    .footer-col h4 { font-weight: 600; font-size: 0.875rem; color: #fff; margin-bottom: 14px; }
+    .footer-col ul { display: flex; flex-direction: column; gap: 9px; }
+    .footer-col a { font-size: 0.875rem; color: #94A3B8; transition: color 0.15s; }
+    .footer-col a:hover { color: #fff; }
+    .footer-bottom { padding-top: 28px; border-top: 1px solid rgba(255,255,255,.06); display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .footer-bottom p { font-size: 0.8125rem; }
+    .footer-bottom-links { display: flex; gap: 18px; }
+    .footer-bottom-links a { font-size: 0.8125rem; color: #64748B; transition: color 0.15s; }
+    .footer-bottom-links a:hover { color: #94A3B8; }
+
+    /* RESPONSIVO */
+    @media (max-width: 1024px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+    }
+    @media (max-width: 768px) {
+      :root { --section-gap: 60px; }
+      .nav-menu { display: none; }
+      .nav-cta  { display: none; }
+      .hamburger { display: flex; }
+      .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+      .hero-visual { order: -1; }
+      .photo-main { height: 180px; }
+      .photo-small { height: 110px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .why-inner { grid-template-columns: 1fr; gap: 40px; }
+      .why-gallery { display: none; }
+      .process-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+      .process-grid::before { display: none; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .cta-inner { padding: 40px 24px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+    }
+    @media (max-width: 480px) {
+      .process-grid { grid-template-columns: 1fr; }
+      .hero-stats { gap: 18px; }
+    }
+  </style>
 </head>
-
 <body>
 
-<header class="header">
-  <meta name="google-site-verification" content="Wdn0cmDSu0WnmEnq42dpMQcoEYLxqeFj44bf13Go5Dc" />
-  <div class="container nav-container">
-    <div class="logo">
-      <img src="img/logo-uniube.png" alt="Uniube">
-      <span>Protech Soluções Tecnológicas</span>
+  <header class="header" role="banner">
+    <div class="container header-inner">
+
+      <a href="index.html" class="logo" aria-label="Protech — página inicial">
+        <img src="img/logo-uniube.png" alt="Logo Uniube">
+        <span class="logo-text">Pro<span>tech</span></span>
+      </a>
+
+      <nav aria-label="Navegação principal">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active" aria-current="page">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="fotos.html">Galeria</a></li>
+          <li><a href="links.html">Links</a></li>
+          <li><a href="listas.html">Listas</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="contato.html" class="btn btn-primary">Solicitar orçamento</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
     </div>
 
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="servicos.html">Serviços</a></li>
-        <li><a href="fotos.html">Galeria</a></li>
-        <li><a href="links.html">Links</a></li>
-        <li><a href="listas.html">Listas</a></li>
-        <li><a href="contato.html" class="btn">Contato</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-
-      </ul>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="fotos.html">Galeria</a>
+      <a href="links.html">Links</a>
+      <a href="listas.html">Listas</a>
+      <a href="blog.html">Blog</a>
+      <a href="faq.html">FAQ</a>
+      <div class="m-cta">
+        <a href="contato.html" class="btn btn-primary" style="width:100%;justify-content:center;">Solicitar orçamento</a>
+      </div>
     </nav>
-  </div>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-75MZSPFQYX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  </header>
 
-  gtag('config', 'G-75MZSPFQYX');
-</script>
-</header>
+  <main id="main">
 
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-inner">
+          <div>
+            <div class="hero-eyebrow">
+              <div class="eyebrow-dot" aria-hidden="true"></div>
+              <span class="eyebrow-text">Aberto agora — Uberaba, MG</span>
+            </div>
+            <h1 id="hero-heading" class="display-xl">
+              Seu smartphone<br>em <span class="accent">mãos especializadas</span>
+            </h1>
+            <p class="hero-desc">Assistência técnica de alta precisão: reparo de placa-mãe, microsoldagem, troca de tela e recuperação de dados. Diagnóstico grátis, atendimento no mesmo dia.</p>
+            <div class="hero-actions">
+              <a href="contato.html" class="btn btn-primary">Solicitar orçamento</a>
+              <a href="servicos.html" class="btn btn-outline">Ver serviços</a>
+            </div>
+            <div class="hero-stats" aria-label="Números da Protech">
+              <div><div class="stat-num">500+</div><div class="stat-label">Dispositivos reparados</div></div>
+              <div><div class="stat-num">98%</div><div class="stat-label">Clientes satisfeitos</div></div>
+              <div><div class="stat-num">90 dias</div><div class="stat-label">Garantia</div></div>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="photo-grid">
+              <div class="photo-main">
+                <img src="img/reparo1.jpg" alt="Técnico realizando reparo de smartphone">
+              </div>
+              <div class="photo-small">
+                <img src="img/reparo2.jpg" alt="Reparo de placa-mãe">
+              </div>
+              <div class="photo-small">
+                <img src="img/reparo3.jpg" alt="Microsoldagem de precisão">
+              </div>
+            </div>
+            <div class="photo-badge">
+              <div class="badge-icon">🛡️</div>
+              <div>
+                <div class="badge-val">90 dias</div>
+                <div class="badge-lbl">de garantia</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container">
-    <h1>Assistência Técnica Especializada em Smartphones</h1>
-    <p>
-      Reparo avançado de placas, microsoldagem, desbloqueio e recuperação
-      de dispositivos com tecnologia de ponta.
-    </p>
-    <a href="contato.html" class="btn">Solicitar Orçamento</a>
-  </div>
-</section>
+    <section class="section" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">O que fazemos</span>
+          <h2 id="services-heading" class="display-lg">Serviços especializados</h2>
+          <p>Atendemos todas as marcas e modelos com técnicos certificados e peças de qualidade.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon"><img src="img/microsolda.png" alt=""></div>
+            <h3>Microsoldagem</h3>
+            <p>Reparo de componentes SMD, reballing de chips e correção de curtos com estação profissional de precisão.</p>
+            <a href="servicos.html" class="service-link">Saiba mais →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">📱</div>
+            <h3>Reparo de placa-mãe</h3>
+            <p>Diagnóstico e correção de falhas eletrônicas complexas com equipamento de última geração.</p>
+            <a href="servicos.html" class="service-link">Saiba mais →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🖥️</div>
+            <h3>Troca de tela</h3>
+            <p>Substituição com displays originais ou de alta qualidade. Garantia de 90 dias na peça e na mão de obra.</p>
+            <a href="servicos.html" class="service-link">Saiba mais →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🔓</div>
+            <h3>Desbloqueio</h3>
+            <p>Remoção de bloqueio de operadora, conta Google e FRP de forma segura, sem perda de dados.</p>
+            <a href="servicos.html" class="service-link">Saiba mais →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">⚡</div>
+            <h3>Troca de bateria</h3>
+            <p>Substituição de baterias que não retêm carga ou incham, com componentes homologados por modelo.</p>
+            <a href="servicos.html" class="service-link">Saiba mais →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">💾</div>
+            <h3>Recuperação de dados</h3>
+            <p>Recuperamos fotos, contatos e arquivos de aparelhos com tela quebrada, molhados ou que não ligam.</p>
+            <a href="servicos.html" class="service-link">Saiba mais →</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<!-- SERVIÇOS -->
-<section class="servicos container">
-  <h2>Nossos Serviços</h2>
+    <section class="why-section" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="why-inner">
+          <div class="why-content">
+            <span class="section-label">Por que a Protech</span>
+            <h2 id="why-heading" class="display-lg">Técnica de nível profissional, atendimento humano</h2>
+            <p>Trabalhamos com equipamentos de ponta — estação de microsoldagem, osciloscópio digital e câmera de inspeção — para garantir o diagnóstico mais preciso do mercado.</p>
+            <div class="features">
+              <div class="feature">
+                <div class="feature-icon">✅</div>
+                <div><h4>Diagnóstico grátis</h4><p>Avaliamos seu aparelho sem custo. Você aprova o orçamento antes de qualquer serviço.</p></div>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">⏱️</div>
+                <div><h4>Atendimento no mesmo dia</h4><p>A maioria dos reparos é concluída em até 2 horas com hora marcada.</p></div>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">🛡️</div>
+                <div><h4>90 dias de garantia</h4><p>Todos os serviços cobertos. Peça defeituosa? Substituímos sem custo.</p></div>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">💬</div>
+                <div><h4>Acompanhe pelo WhatsApp</h4><p>Atualizamos você em tempo real em cada etapa do reparo.</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="why-gallery" aria-hidden="true">
+            <div class="g-main">
+              <img src="img/microsolda.png" alt="Microsoldagem profissional">
+            </div>
+            <div class="g-small">
+              <img src="img/reparo1.jpg" alt="Reparo de smartphone">
+            </div>
+            <div class="g-small">
+              <img src="img/reparo2.jpg" alt="Técnico em ação">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div class="cards">
+    <section class="section" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Como funciona</span>
+          <h2 id="process-heading" class="display-lg">Do diagnóstico à entrega</h2>
+          <p>Processo simples e transparente para você ter seu smartphone de volta o quanto antes.</p>
+        </div>
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="process-num" aria-hidden="true">01</div>
+            <h3>Diagnóstico grátis</h3>
+            <p>Traga o aparelho ou agende uma visita. Avaliamos sem custo.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-num" aria-hidden="true">02</div>
+            <h3>Orçamento aprovado</h3>
+            <p>Orçamento detalhado enviado. Só iniciamos com sua autorização.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-num" aria-hidden="true">03</div>
+            <h3>Reparo preciso</h3>
+            <p>Técnicos realizam o serviço com equipamentos profissionais.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-num" aria-hidden="true">04</div>
+            <h3>Entrega com garantia</h3>
+            <p>Aparelho testado, entregue com 90 dias de garantia no serviço.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="card">
-      <h3>Reparo de Placa</h3>
-      <p>Diagnóstico e correção de falhas eletrônicas complexas.</p>
+    <section class="section testimonials-section" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Depoimentos</span>
+          <h2 id="testimonials-heading" class="display-lg">O que nossos clientes dizem</h2>
+        </div>
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testimonial-text">"Meu celular caiu na água e achei que tinha perdido tudo. A Protech recuperou meu aparelho e todos os dados em menos de 3 horas!"</p>
+            <div class="t-author">
+              <div class="t-avatar" aria-hidden="true">CF</div>
+              <div><div class="t-name">Carlos Fernandes</div><div class="t-city">Uberaba, MG</div></div>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testimonial-text">"Troquei a tela do meu iPhone e ficou como novo! Preço justo, atendimento rápido e qualidade incrível. Recomendo a todos!"</p>
+            <div class="t-author">
+              <div class="t-avatar" aria-hidden="true">AS</div>
+              <div><div class="t-name">Ana Silva</div><div class="t-city">Uberaba, MG</div></div>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testimonial-text">"O técnico identificou um problema na placa que nenhuma outra assistência resolveu. Serviço de altíssimo nível!"</p>
+            <div class="t-author">
+              <div class="t-avatar" aria-hidden="true">RM</div>
+              <div><div class="t-name">Roberto Mendes</div><div class="t-city">Uberaba, MG</div></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-inner">
+          <h2 id="cta-heading" class="display-lg">Pronto para resolver o problema <span class="cta-accent">do seu smartphone?</span></h2>
+          <p>Diagnóstico gratuito. Orçamento sem compromisso. Atendimento hoje mesmo.</p>
+          <div class="cta-buttons">
+            <a href="contato.html" class="btn btn-white">Solicitar orçamento grátis</a>
+            <a href="https://wa.me/5534999999999" class="btn-ghost-white" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="img/logo-uniube.png" alt="Logo Uniube">
+            <span class="logo-text">Protech</span>
+          </div>
+          <p>Assistência técnica especializada em smartphones. Qualidade, rapidez e garantia em cada serviço.</p>
+          <div class="footer-social">
+            <a href="#" class="s-link" aria-label="Instagram">ig</a>
+            <a href="#" class="s-link" aria-label="Facebook">fb</a>
+            <a href="https://wa.me/5534999999999" class="s-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">wa</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="servicos.html">Microsoldagem</a></li>
+            <li><a href="servicos.html">Reparo de placa</a></li>
+            <li><a href="servicos.html">Troca de tela</a></li>
+            <li><a href="servicos.html">Desbloqueio</a></li>
+            <li><a href="servicos.html">Recuperação de dados</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>A empresa</h4>
+          <ul>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="fotos.html">Galeria</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="https://wa.me/5534999999999">(34) 9 9999-9999</a></li>
+            <li><a href="mailto:contato@protech.com.br">contato@protech.com.br</a></li>
+            <li><a href="#">Uberaba — MG</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Protech Soluções Tecnológicas — Rúben Fanael Fernandes da Silva · RA: 5171915</p>
+        <nav class="footer-bottom-links" aria-label="Links legais">
+          <a href="politica.html">Política de privacidade</a>
+          <a href="termos.html">Termos de uso</a>
+          <a href="sitemap.xml">Sitemap</a>
+        </nav>
+      </div>
     </div>
+  </footer>
 
-    <div class="card">
-      <h3>Troca de Tela</h3>
-      <p>Substituição com peças de alta qualidade.</p>
-    </div>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
 
-    <div class="card">
-      <h3>Desbloqueio</h3>
-      <p>Remoção de bloqueios e recuperação de sistema.</p>
-    </div>
+    hamburger.addEventListener('click', function () {
+      var isOpen = mobileNav.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+    });
 
-  </div>
-</section>
-
-<!-- DIFERENCIAIS -->
-<section class="diferenciais">
-  <div class="container">
-    <h2>Diferenciais</h2>
-
-    <ul>
-      <li>✔ Microsoldagem de precisão</li>
-      <li>✔ Equipamentos profissionais</li>
-      <li>✔ Atendimento rápido</li>
-      <li>✔ Garantia em todos os serviços</li>
-    </ul>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <p>Rúben Fanael Fernandes da Silva - RA: 5171915</p>
-
- <div class="footer-links">
-    <a href="politica.html">Política de Privacidade</a> |
-    <a href="termos.html">Termos de Uso</a>
-  </div>
-
-</footer>
+    mobileNav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        mobileNav.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
 
 </body>
 </html>
